@@ -27,6 +27,6 @@ jobs:
     steps:
       - name: step 1 in custom-env-2 job
         run: |
-          echo "fix_my: ${WF_ENV}"
+          echo "fix_my: ${fix_my}"
           echo "JOB_ENV: ${JOB_ENV}"
           echo "STEP_ENV: ${STEP_ENV}"
