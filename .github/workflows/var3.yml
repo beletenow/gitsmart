@@ -1,5 +1,5 @@
 
-name: Environment variables
+name: var3
 on: push
 env:
   WF_ENV: This is env variables scoped at workflow level
@@ -12,9 +12,9 @@ jobs:
     steps:
       - name: step 1 in custom-env job
         env:
-          fix_my: This is environment variable scoped at step level
+          fix_my: hhhhhhhhh
         run: |
-          echo "WF_ENV: ${WF_ENV}"
+          echo "fix_my: ${fix_my}"
           echo "JOB_ENV: ${JOB_ENV}"
           echo "STEP_ENV: ${STEP_ENV}"
       - name: step 2
