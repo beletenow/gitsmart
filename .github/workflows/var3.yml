@@ -12,9 +12,9 @@ jobs:
     steps:
       - name: step 1 in custom-env job
         env:
-          fix_my: hhhhhhhhh
+          FIX_MY: hhhhhhhhh
         run: |
-          echo "fix_my: ${fix_my}"
+          echo "fix_my: ${FIX_MY}"
           echo "JOB_ENV: ${JOB_ENV}"
           echo "STEP_ENV: ${STEP_ENV}"
       - name: step 2
